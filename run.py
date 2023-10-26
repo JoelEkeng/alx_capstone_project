@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
 from flask_pymongo import PyMongo
 from flask_mail import Mail, Message
-# from config import mail_username, mail_password
 from decouple import config
 
 # Load email username and passwords
