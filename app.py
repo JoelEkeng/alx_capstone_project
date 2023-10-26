@@ -56,7 +56,7 @@ def contact():
         messagebody = request.form['message']
 
         # Store the data in MySQL
-        # from models import ContactDetails  # Create a model for Contact_Details
+        # Create a model for Contact_Details
         contact_entry = ContactDetails(name=name, subject=subject, email=email, message=messagebody)
         db.session.add(contact_entry)
         db.session.commit()
